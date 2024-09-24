@@ -1,0 +1,333 @@
+/* ------------ PARTE DO GERAL ----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    height: 100vh;
+    background-color: white;
+}
+
+.Interface{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+/* Parte do Header */
+header{
+    padding: 20px 4%;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 0 ;
+}
+.Logo h1{
+    font-size: 25px;
+    color: black;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.Logo i{
+    font-size: 40px;
+}
+
+header > .Interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    transition: .2s;
+    color: black;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    transition: 4s;
+}
+.Buttons-Login_Logout a button{
+    color: black;
+    border-radius: 20px;
+    padding: 10px 2%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 150px;
+    background-color: transparent;
+    border: black solid 2px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* ------------ PARTE DO INTRDUÇÂO DO SITE ----------- */
+section.Introducao-site{
+    padding: 0px 0%;
+    margin: 0;
+    margin-top: 0px;
+}
+.flexIntroducao{
+    display: flex;
+}
+.introducao-img img{
+    width: 1000px;   
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Introducao-text{
+    color: black;
+    align-items: center;
+    text-align: center;
+    margin-left: 1%;
+    margin-top: 15%;
+}
+.Introducao-text h2{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.Introducao-text h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.Introducao-text button{
+    color: black;
+    padding: 10px 2%;
+    font-size: 50px;
+    font-weight: 700;
+    width: 250px;
+    background-color: transparent;
+    border: black solid 2px;
+    font-size: 18px;
+    cursor: pointer;   
+
+}
+/* PARTE DE SERVIÇOS */
+section.Projetos-Site{
+    padding: 40px 4%;
+    margin-top: 80px;
+
+}
+section.Projetos-Site .flex{
+    align-items: center;
+    justify-content: center;
+}
+.Sobre_Empresa{
+    padding: 40px 4%;
+    border: black solid 2px;
+    border-radius: 15px;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+}
+.Sobre_Empresa h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.Sobre_Empresa img{
+    width: 700px;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Sobre_Empresa p{
+    font-size: 20px;
+    line-height: 40px;
+}
+/* Benefícios */
+
+section.MeioDoSite{
+    padding: 40px 4%;
+}
+section.MeioDoSite .flex{
+    align-items: center;
+    justify-content: center;
+}
+.MeioDoSite {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+.MeioDoSite h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+.benefit {
+    text-decoration: none;  
+    color: black; 
+    padding: 40px ;
+    height: 600px;
+    width: 400px;
+    border: rgb(194, 191, 191) solid 1px;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.benefit i{
+    color: #16df6d;
+    font-size: 70px;
+    border: #16df6d solid 2px;
+    padding: 10px 6%;
+    border-radius: 100%;
+}
+.benefit h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.benefit:hover{
+    transform: scale(1.05);
+}
+/*---------PARTE DO FORMULARIO-------------*/
+section.Formulario{
+    padding: 80px 4%;
+}
+section.Formulario h2{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+section.Formulario span{
+    color: red;
+}
+form{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+.btn-Enviar input{
+    cursor: pointer;
+    transition: .4s;
+    font-size: 18px;
+}
+.btn-Enviar input:hover{
+    transform: scale(1.01);
+}
+/*---------PARTE DO RODAPE-------------*/
+
+footer{
+    padding: 40px 4%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+footer .flex{
+    justify-content: space-between;
+
+}
+footer .line-fotter{
+    padding: 20px 0;
+}
+footer .line-fotter h1{
+    font-size: 40px;
+    margin-bottom: 10px ;
+    text-decoration: underline;
+}
+.borda{
+    border-top: 2px solid black;
+}
+footer .line-fotter p{
+    color: black;
+    font-size: 22px;   
+}
+footer .line-fotter p a{
+    color: black;
+    font-size: 22px;   
+}
+footer .line-fotter .Funcionamento span{
+    text-decoration: underline;
+    font-weight: 800;
+}
+.logo-fotter{
+    margin-right: 20%;
+}
+/*---------PARTE RESPONSIVEL-------------*/
+
+@media screen and (max-width: 1020px) {
+    
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .meuu-desptop, .Redes-Sociais{
+        display: none;
+    }
+    .introducao-img img{
+        display: none;
+    }
+    .Text-SobreMim h1,.Text-SobreMim p{
+        margin-left: 30px;   
+    }
+    .Redes-Sociais-Sobre{
+        margin-right: 20px;
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
+    .Redes-Sociais-Sobre a{
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+    .Projetos-Site img{
+        display: none;
+    }
+    .Content-Conhecimentos{
+        height: 400px;
+        width: 250px;
+        flex-direction: column;
+    }
+    .Content-Conhecimentos img{
+        width: 100px;
+        margin-left: 30%;
+    }
+    .Content-Conhecimentos p{
+        padding: 20px 2%;
+    }
+    .Projects{
+        height: 400px;
+        width: 300px; 
+        margin-left: 20px; 
+    }
+    footer .line-fotter p a{
+        font-size: 18px;   
+    }
+    .Projetos-Site h1{
+        font-size: 50px;
+    }
+    section.MeioDoSite{
+        padding: 0px 0%;
+        margin-left: 40px;
+    }
+}
