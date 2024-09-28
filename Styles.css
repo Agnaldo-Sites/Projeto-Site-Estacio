@@ -57,7 +57,7 @@ header a{
 header nav ul{
     list-style-type: none;
 }
-header nav ul li{
+header nav.Menu-Desk ul li{
     display: inline-block;
     padding: 0 40px;
     transition: 4s;
@@ -74,6 +74,66 @@ header nav ul li{
     font-size: 18px;
     cursor: pointer;
 }
+
+
+/* ESTILO DO MENU MOBILE*/
+.Menu-Mobile{
+    background-color: black;
+    height: 150vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+.Menu-Mobile.abrir-menu{
+    width: 70%;
+}
+
+.Menu-Mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.Menu-Mobile nav ul{
+    text-align: right;
+
+}
+.Menu-Mobile nav ul li a{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+.Menu-Mobile nav ul li a:Hover{
+    background-color: #00FF08; 
+    color: #000;
+}
+.Menu-Mobile .btn-fechar i{
+    color: #00FF08;
+    font-size: 30px;
+}
+.btn-fechar{
+    padding: 20px 5%;
+}
+.btn-AbriMenu i{
+    color: black;
+    font-size: 60px;
+    display: none;
+}
+.overlay-menu{
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
 /* ------------ PARTE DO INTRDUÇÂO DO SITE ----------- */
 section.Introducao-site{
     padding: 0px 0%;
@@ -279,14 +339,18 @@ footer .line-fotter .Funcionamento span{
 @media screen and (max-width: 1020px) {
     
     .flex{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-
+    .flexIntroducao{
+        flex-direction: column;
+    }
     .meuu-desptop, .Redes-Sociais{
         display: none;
     }
     .introducao-img img{
-        display: none;
+        width: 400px;
+        margin-left: 4%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
     .Text-SobreMim h1,.Text-SobreMim p{
         margin-left: 30px;   
@@ -301,7 +365,10 @@ footer .line-fotter .Funcionamento span{
         margin-left: 20px;
     }
     .Projetos-Site img{
-        display: none;
+        margin-bottom: 40px;
+        width: 350px;
+        margin-left: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
     .Content-Conhecimentos{
         height: 400px;
@@ -329,5 +396,17 @@ footer .line-fotter .Funcionamento span{
     section.MeioDoSite{
         padding: 0px 0%;
         margin-left: 40px;
+    }
+    section.Formulario h2{
+        font-size: 50px;
+    }
+    .Buttons-Login_Logout button{
+        display: none;
+    }
+    .Logo h1{
+        margin-right: 10px;
+    }
+    .btn-AbriMenu i{
+        display: block;
     }
 }
